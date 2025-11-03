@@ -38,8 +38,8 @@
             font-family: 'Inter', sans-serif;
             background-color: #FDFBF5; /* Use the cream color for the main page background */
         }
-        /* Custom style for the checkbox to match the theme */
-        input[type="checkbox"] {
+        /* Custom style for the checkbox/radio to match the theme */
+        input[type="checkbox"], input[type="radio"] {
             accent-color: #B8860B; /* gold-deep */
         }
     </style>
@@ -59,7 +59,7 @@
                 <div class="hidden sm:flex sm:items-center sm:ml-6">
                     <div class="flex space-x-4 md:space-x-6">
                         <a href="#welcome" class="font-serif text-text-dark hover:text-gold-deep transition-colors duration-200 text-lg px-3 py-2 rounded-md">Welcome</a>
-                        <a href="#location" class="font-serif text-text-dark hover:text-gold-deep transition-colors duration-2G00 text-lg px-3 py-2 rounded-md">When & Where</a>
+                        <a href="#location" class="font-serif text-text-dark hover:text-gold-deep transition-colors duration-200 text-lg px-3 py-2 rounded-md">When & Where</a>
                         <a href="#rsvp-section" class="font-serif text-gold-deep hover:text-white hover:bg-gold-deep border border-gold-deep transition-all duration-200 text-lg px-4 py-1 rounded-full">RSVP</a>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
 
         <!-- New Welcome Section -->
         <section id="welcome" class="mb-16 scroll-mt-20">
-            <h2 class="font-serif text-5xl text-text-dark text-center mb-12">Welcome to our Wedding Website!</h2>
+            <h2 class="font-serif text-5xl text-text-dark text-center mb-12">Welcome</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
                 <div class="w-full">
                      <img src="images/cityhall.jpg" 
@@ -305,8 +305,8 @@
     </footer>
 
     <!-- Script to handle RSVP form submission -->
-    <script type(unknown)MODULE"">
-        // --- NEW: Google Apps Script URL ---
+    <script type="module">
+        // --- Google Apps Script URL ---
         // This should be the URL you already have from the previous step.
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwVr1vraEfwpFGzU7B3b8peUDDCf0Bei-9Vc_s4cB15b6r2ouZtdRhDBzxdjhr2CnS9/exec';
 
@@ -316,7 +316,7 @@
         const successMessage = document.getElementById('rsvp-success');
         const errorMessage = document.getElementById('rsvp-error');
 
-        // --- NEW: Accommodation Toggle Logic ---
+        // --- Accommodation Toggle Logic ---
         const radioYes = document.getElementById('accommodation-yes');
         const radioNo = document.getElementById('accommodation-no');
         const accommodationDates = document.getElementById('accommodation-dates');
@@ -325,7 +325,6 @@
         radioYes.addEventListener('change', () => {
             if (radioYes.checked) {
                 accommodationDates.classList.remove('hidden');
-Two tickets to the moon, please.
             }
         });
 
