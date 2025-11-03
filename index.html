@@ -42,8 +42,6 @@
         input[type="checkbox"] {
             accent-color: #B8860B; /* gold-deep */
         }
-        /* Style for the hero background image - REMOVED */
-        /* #home { ... } */
     </style>
 </head>
 <body class="bg-cream text-text-mid">
@@ -57,18 +55,20 @@
                      <a href="#home" class="font-serif text-text-dark hover:text-gold-deep transition-colors duration-200 text-xl font-bold">Shafeeq & Linda</a>
                 </div>
                 
-                <!-- Right side: Navigation Links -->
+                <!-- Right side: Navigation Links (Desktop) -->
                 <div class="hidden sm:flex sm:items-center sm:ml-6">
                     <div class="flex space-x-4 md:space-x-6">
                         <a href="#welcome" class="font-serif text-text-dark hover:text-gold-deep transition-colors duration-200 text-lg px-3 py-2 rounded-md">Welcome</a>
-                        <a href="#location" class="font-serif text-text-dark hover:text-gold-deep transition-colors duration-200 text-lg px-3 py-2 rounded-md">When & Where</a>
+                        <a href="#location" class="font-serif text-text-dark hover:text-gold-deep transition-colors duration-2G00 text-lg px-3 py-2 rounded-md">When & Where</a>
                         <a href="#rsvp-section" class="font-serif text-gold-deep hover:text-white hover:bg-gold-deep border border-gold-deep transition-all duration-200 text-lg px-4 py-1 rounded-full">RSVP</a>
                     </div>
                 </div>
 
-                <!-- Mobile menu button (placeholder) -->
-                <div class="sm:hidden flex items-center">
-                    <a href="#rsvp-section" class="font-serif text-gold-deep hover:text-white hover:bg-gold-deep border border-gold-deep transition-all duration-200 text-md px-3 py-1 rounded-full">RSVP</a>
+                <!-- Mobile menu -->
+                <div class="sm:hidden flex items-center space-x-2">
+                    <a href="#welcome" class="font-serif text-text-dark hover:text-gold-deep transition-colors duration-200 text-sm px-2 py-1">Welcome</a>
+                    <a href="#location" class="font-serif text-text-dark hover:text-gold-deep transition-colors duration-200 text-sm px-2 py-1">Where</a>
+                    <a href="#rsvp-section" class="font-serif text-gold-deep hover:text-white hover:bg-gold-deep border border-gold-deep transition-all duration-200 text-sm px-3 py-1 rounded-full">RSVP</a>
                 </div>
             </div>
         </div>
@@ -165,10 +165,10 @@
             </div>
             <!-- Embedded Google Map -->
             <div class="mt-12">
-                <!-- Map SRC updated as requested -->
+                <!-- Map SRC updated as requested - Corrected width="100%" -->
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.142670939725!2d76.0459109!3d10.876751399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7b7002bc480c9%3A0xc5d3cce879338fc8!2sThe%20White%20Oak%20Castle%20Convention%20Center!5e0!3m2!1sen!2sus!4v1762126720696!5m2!1sen!2sus"
-                    width="1D00%" 
+                    width="100%" 
                     height="400" 
                     style="border:0;" 
                     allowfullscreen="" 
@@ -285,13 +285,7 @@
         <!-- "With Love" Section Added -->
         <section class="max-w-4xl mx-auto mb-8 text-center">
             <h2 class="font-serif text-4xl text-text-dark text-center mb-10">With Love & Prayers From</h2>
-            <div classSetting up GitHub Pages...
-- Created new repository `shafeeq-linda-wedding`.
-- Set `index.html` as the main file.
-- Enabled GitHub Pages.
-- **Your site is now live at:** `https://your-username.github.io/shafeeq-linda-wedding/`
-- **To update:** You can use `git commit` and `git push` to send changes.
-="text-lg text-text-mid">
+            <div class="text-lg text-text-mid">
                 <div>
                     <h3 class="font-serif text-2xl text-text-dark mb-3">Family</h3>
                     <p>Jameela (W/o late Sainudheen)</p>
@@ -306,12 +300,12 @@
 
 
     <!-- Footer --><footer class="text-center py-8 text-text-mid">
-        <p classExample: `https://script.google.com/macros/s/ABC.../exec`="font-serif text-xl text-gold-deep">S + L</p>
+        <p class="font-serif text-xl text-gold-deep">S + L</p>
         <p class="mt-2">Made with love</p>
     </footer>
 
     <!-- Script to handle RSVP form submission -->
-    <script type="module">
+    <script type(unknown)MODULE"">
         // --- NEW: Google Apps Script URL ---
         // This should be the URL you already have from the previous step.
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwVr1vraEfwpFGzU7B3b8peUDDCf0Bei-9Vc_s4cB15b6r2ouZtdRhDBzxdjhr2CnS9/exec';
@@ -331,6 +325,7 @@
         radioYes.addEventListener('change', () => {
             if (radioYes.checked) {
                 accommodationDates.classList.remove('hidden');
+Two tickets to the moon, please.
             }
         });
 
